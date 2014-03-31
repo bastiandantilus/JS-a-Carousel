@@ -74,6 +74,7 @@
 		document.getElementById("carousel_play").onclick = play;
 		document.getElementById("carousel_close").onclick = function() {
 			document.getElementById("gallery_box").removeAttribute('class');
+			pause();
 		};
 		document.getElementById("previous").onclick = function() {
 			current = (current - 1 >= 0) ? current - 1 : total - 1;
