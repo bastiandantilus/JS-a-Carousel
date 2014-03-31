@@ -65,7 +65,7 @@
 		var pause = function() {
 			if(timeout) { clearTimeout(timeout); }
 			document.getElementById("carousel_play").style.display = "block";
-			this.style.display = "none";
+			document.getElementById("carousel_pause").style.display = "none";
 		};
 		
 		document.getElementById("carousel_open").onclick = open_carousel;
@@ -75,6 +75,8 @@
 		document.getElementById("carousel_close").onclick = function() {
 			document.getElementById("gallery_box").removeAttribute('class');
 			pause();
+			document.getElementById("carousel_play").style.display = "none";
+			
 		};
 		document.getElementById("previous").onclick = function() {
 			current = (current - 1 >= 0) ? current - 1 : total - 1;
