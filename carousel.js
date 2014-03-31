@@ -52,14 +52,26 @@
 				images[i].className = "thumb" + (i == current ? " open" : "");
 			};
 
-			if (timeout) {
-				clearTimeout(timeout);
-			}
-
+			play();
+		};
+		
+		var play = function() {
+			if(timeout) { clearTimeout(timeout); }
 			timeout = setTimeout(next, 5000);
+			document.getElementById("carousel_pause").style.display = "block";
+			document.getElementById("carousel_play").style.display = "none";
+		};
+		
+		var pause = function() {
+			if(timeout) { clearTimeout(timeout); }
+			document.getElementById("carousel_play").style.display = "block";
+			this.style.display = "none";
 		};
 		
 		document.getElementById("carousel_open").onclick = open_carousel;
+		document.getElementById("carousel_pause").onclick = pause;
+		
+		document.getElementById("carousel_play").onclick = play;
 		document.getElementById("carousel_close").onclick = function() {
 			document.getElementById("gallery_box").removeAttribute('class');
 		};
