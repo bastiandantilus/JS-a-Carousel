@@ -149,6 +149,7 @@ nav div:active {
 	background-position: 50% 50%;
 	background-color: black;
 	background-repeat: no-repeat;
+	cursor: pointer;
 }
 
 #gallery_box.carousel #gallery .thumb.open {
@@ -160,6 +161,7 @@ nav div:active {
 	z-index: 9999;
 	background-size: contain;
 	flex: none;
+	cursor: auto;
 }
 
 #gallery .thumb:hover {
