@@ -1,6 +1,8 @@
 body {
 	overflow: hidden;
 	font-family: Arial, sans;
+	
+	background: #DDDDFF;
 }
 
 body * {
@@ -18,16 +20,28 @@ nav, footer, header {
 	height: 6vh;
 	width: 90vw;
 	padding: 0;
+	background: #EEEEEE;
+	border-radius: 10px;
+	line-height: 6vh;
+}
+
+header {
+	background: maroon;
+	color: white;
+	text-align: center;
 }
 
 header h1 {
-	font-size: 1em;
+	font-size: 4vh;
+}
+
+footer {
+	color: #555555;
 }
 
 nav {
 	overflow: auto;
 	border: 1px solid silver;
-	border-radius: 10px;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
@@ -42,18 +56,37 @@ nav div {
 	display: inline-block;
 	text-align: center;
 	line-height: 6vh;
+	background: #5588FF;
+	border-radius: 5px;
+	width: 90%;
+	box-shadow: 2px 2px 5px silver, inset 5px 5px 10px silver;
+	margin: 2px 10px;
+	color: white;
+	font-weight: 700;
 
 }
 
-nav a {
-	text-decoration: none;
+nav div:hover {
+	cursor: pointer;
+	background-color: white;
+	color: black;
+	box-shadow: 3px 3px 5px silver, inset 0px 0px 10px 10px silver;
+	
+}
 
+nav div:active {
+
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	box-shadow: 3px 3px 5px silver, inset 0px 0px 10px 10px silver;
+	
 }
 
 #gallery_box {
 	position: relative;
 	width: 90vw;
-	background: #DDDDFF;
+	background: #EEEEFF;
 	border: 1px solid silver;
 	border-radius: 10px;
 	margin: 10px auto;
@@ -112,7 +145,7 @@ nav a {
 	margin: 5px;
 	background-size: cover;
 	background-position: 50% 50%;
-	background-color: white;
+	background-color: black;
 	background-repeat: no-repeat;
 }
 
