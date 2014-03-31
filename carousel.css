@@ -139,6 +139,8 @@ nav div:active {
 	flex: 1 1 auto;
 	width: 20vmin;
 	height: 20vmin;
+	min-width: 32px;
+	min-height: 32px;
 	transition: background-size 0.5s ease-in, width 0.5s ease-out, height 0.5s ease-out, top 0.7s ease-out;
 	border: 1px solid silver;
 	border-radius: 10px;
