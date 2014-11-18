@@ -1,7 +1,4 @@
-Image gallery/carousel:
-
-Grabbed a bunch of large but different sized images (preferably of animals)
-Built an image gallery/carousel using JavaScript
+# Image Carousel
 
 The user can swap between images easily, or the carousel will switch to the next image if the user doesn't click anything for a while
 
@@ -11,8 +8,7 @@ Some advanced CSS doesn't work perfectly on all browsers, but it should degrade 
 
 The gallery/carousel has a fixed size and displays images inside of it without distorting them; thumb view displays the images in a grid and when the user clicks on one, it switches to carousel view.
 
-http://bastiandantilus.github.io/JS-a-Ca
-rousel/carousel.html
+http://bastiandantilus.github.io/JS-a-Carousel/carousel.html
 
 http://tinyurl.com/carouseljs
 
